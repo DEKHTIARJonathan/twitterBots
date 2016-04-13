@@ -1,0 +1,1 @@
+docker run -d -v /root/docker/twitterWelcomeBot:/twitter --name welcomeBot python:2 /bin/sh -c 'cd /twitter; export http_proxy="http://proxyweb.utc.fr:3128"; export https_proxy="http://proxyweb.utc.fr:3128"; pip install --upgrade pip; pip install -r requirements.txt; python welcomeBot_.py'
